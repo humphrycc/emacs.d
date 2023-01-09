@@ -9,3 +9,8 @@
 
 # Undo-tree save-files
 *.~undo-tree
+
+.cache/
+.lsp-session-v1
+elpa/
+recentf
