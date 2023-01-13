@@ -78,6 +78,7 @@
 (require 'init-yasnippet)
 
 ;; Language support
+(require 'init-bazel)
 (require 'init-c-cpp)
 (require 'init-clang-format)
 (require 'init-rust)
