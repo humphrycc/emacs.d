@@ -86,6 +86,7 @@
 (require 'init-javascript)
 (require 'init-protobuf)
 (require 'init-yaml)
+(require 'init-org)
 (require 'init-flycheck)
 (require 'init-company)
 
