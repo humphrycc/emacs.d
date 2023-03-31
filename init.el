@@ -82,14 +82,12 @@
 (require 'init-c-cpp)
 (require 'init-clang-format)
 (require 'init-rust)
+(require 'init-go)
+(require 'init-javascript)
 (require 'init-protobuf)
 (require 'init-yaml)
 (require 'init-flycheck)
 (require 'init-company)
-
-
-
-
 
 
 (provide 'init)
