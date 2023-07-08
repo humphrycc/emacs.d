@@ -31,11 +31,11 @@
 (require 'init-utils)
 
 (require 'package)
-(add-to-list 'package-archives '( "melpa" . "https://melpa.org/packages/") t)
+;; (add-to-list 'package-archives '( "melpa" . "https://melpa.org/packages/") t)
 ;; (add-to-list 'package-archives '( "melpa-stable" . "https://stable.melpa.org/packages/") t)
-;; (setq package-archives '(("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
-;;                          ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
-;;                          ("nongnu" . "https://mirrors.ustc.edu.cn/elpa/nongnu/")))
+(setq package-archives '(("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
+                         ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
+                         ("nongnu" . "https://mirrors.ustc.edu.cn/elpa/nongnu/")))
 
 (setq package-enable-at-startup nil)
 (package-initialize)
@@ -94,7 +94,7 @@
 (require 'init-org)
 (require 'init-flycheck)
 (require 'init-company)
-(require 'init-copilot)
+;(require 'init-copilot)
 
 (provide 'init)
 
