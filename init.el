@@ -75,7 +75,21 @@
 ;; set appearance of a tab that is represented by 4 spaces
 (setq-default tab-width 4)
 
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
+
+(defun save-frame-to-register (register)
+  "Save the current frame layout to a register."
+  (interactive "cSave frameset to register: ")
+  (frameset-to-register register))
+(global-set-key (kbd "C-c r") 'save-frame-to-register)
+
+(global-set-key (kbd "C-c l") 'jump-to-register)
+
 (require 'init-theme)
+(require 'init-ace-window)
 (require 'init-undo-tree)
 (require 'init-helm)
 (require 'init-lsp)
@@ -85,6 +99,7 @@
 (require 'init-bazel)
 (require 'init-c-cpp)
 (require 'init-clang-format)
+(require 'init-cmake)
 (require 'init-rust)
 (require 'init-go)
 (require 'init-python)
@@ -94,7 +109,7 @@
 (require 'init-org)
 (require 'init-flycheck)
 (require 'init-company)
-;(require 'init-copilot)
+(require 'init-copilot)
 
 (provide 'init)
 

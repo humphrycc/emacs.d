@@ -2,6 +2,11 @@
   :config
   (load-theme 'sanityinc-tomorrow-bright t)
 )
-;  (setq-default custom-enabled-themes '(sanityinc-tomorrow-bright)))
+
+(use-package sr-speedbar
+  :init
+  (setq speedbar-use-images nil)
+  :bind
+ )
 
 (provide 'init-theme)
